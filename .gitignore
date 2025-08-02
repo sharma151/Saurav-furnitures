@@ -1,0 +1,91 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+.temp/
+.cache/
+.vite/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS-specific
+*.swp
+*.swo
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Test snapshots
+__snapshots__/
+
+# Git metadata backups
+*.orig
+
+# Misc
+*.local
+*.bak
+*.tmp
+*.pid
+*.seed
+
+# Firebase / Supabase
+.firebase/
+.supabase/
+
+# Storybook
+storybook-static/
+
+# Next.js cache
+.next/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Optional: Ignore lockfiles if using one package manager only
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+node_modules/
+node_modules
+
+# Prevent huge binaries from being committed again
+node_modules/
+.next/
+dist/
+build/
+*.node
+*.exe
+*.dll
+*.zip
+*.tar
