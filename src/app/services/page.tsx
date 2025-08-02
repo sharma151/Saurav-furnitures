@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Service {
   id: string;
@@ -318,7 +319,7 @@ export default function ServicesPage() {
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
               <div className="relative h-64">
-                <img
+                <Image
                   src={service.image}
                   alt={service.title}
                   className="object-cover w-full h-full"
@@ -514,8 +515,8 @@ export default function ServicesPage() {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-primary-100 mb-6 max-w-2xl mx-auto">
-            Let's discuss your vision and create something beautiful together.
-            Our team is ready to bring your ideas to life.
+            Let&apos;s discuss your vision and create something beautiful
+            together. Our team is ready to bring your ideas to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-secondary">

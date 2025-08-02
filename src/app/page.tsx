@@ -1,14 +1,14 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { carouselItems, categories, products, testimonials } from '@/lib/data'
-import HeroCarousel from '@/components/HeroCarousel'
-import ProductCard from '@/components/ProductCard'
-import CategoryCard from '@/components/CategoryCard'
-import TestimonialCard from '@/components/TestimonialCard'
+import Image from "next/image";
+import Link from "next/link";
+import { carouselItems, categories, products, testimonials } from "@/lib/data";
+import HeroCarousel from "@/components/HeroCarousel";
+import ProductCard from "@/components/ProductCard";
+import CategoryCard from "@/components/CategoryCard";
+import TestimonialCard from "@/components/TestimonialCard";
 
 export default function HomePage() {
-  const featuredProducts = products.slice(0, 4)
-  const featuredTestimonials = testimonials.slice(0, 3)
+  const featuredProducts = products.slice(0, 4);
+  const featuredTestimonials = testimonials.slice(0, 3);
 
   return (
     <div className="min-h-screen">
@@ -23,10 +23,11 @@ export default function HomePage() {
               Explore Our Collections
             </h2>
             <p className="text-lg text-primary-600 max-w-2xl mx-auto">
-              Discover beautiful furniture for every room in your home. From living room essentials to bedroom comfort.
+              Discover beautiful furniture for every room in your home. From
+              living room essentials to bedroom comfort.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category) => (
               <CategoryCard key={category.id} category={category} />
@@ -43,16 +44,17 @@ export default function HomePage() {
               Featured Products
             </h2>
             <p className="text-lg text-primary-600 max-w-2xl mx-auto">
-              Our most popular pieces, crafted with premium materials and timeless design.
+              Our most popular pieces, crafted with premium materials and
+              timeless design.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/products" className="btn-primary">
               View All Products
@@ -70,10 +72,16 @@ export default function HomePage() {
                 Crafting Quality Furniture Since 1995
               </h2>
               <p className="text-lg text-primary-200 mb-6">
-                For over 25 years, Saurav Furnitures has been creating beautiful, durable furniture that transforms homes into sanctuaries. Our commitment to quality craftsmanship and timeless design has made us a trusted name in furniture manufacturing.
+                For over 25 years, Saurav Furnitures has been creating
+                beautiful, durable furniture that transforms homes into
+                sanctuaries. Our commitment to quality craftsmanship and
+                timeless design has made us a trusted name in furniture
+                manufacturing.
               </p>
               <p className="text-primary-200 mb-8">
-                We source only the finest materials and work with skilled artisans to create pieces that will last for generations. Every piece tells a story of quality, comfort, and style.
+                We source only the finest materials and work with skilled
+                artisans to create pieces that will last for generations. Every
+                piece tells a story of quality, comfort, and style.
               </p>
               <Link href="/about" className="btn-primary">
                 Learn Our Story
@@ -99,16 +107,17 @@ export default function HomePage() {
               What Our Customers Say
             </h2>
             <p className="text-lg text-primary-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied customers have to say about our furniture and service.
+              Don&apos;t just take our word for it. Here&apos;s what our
+              satisfied customers have to say about our furniture and service.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredTestimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/testimonials" className="btn-secondary">
               Read All Reviews
@@ -124,18 +133,22 @@ export default function HomePage() {
             Ready to Transform Your Space?
           </h2>
           <p className="text-xl text-accent-100 mb-8 max-w-2xl mx-auto">
-            Get in touch with us today for a personalized consultation and discover how our furniture can enhance your home.
+            Get in touch with us today for a personalized consultation and
+            discover how our furniture can enhance your home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products" className="btn-secondary">
               Browse Products
             </Link>
-            <Link href="/contact" className="bg-white text-accent-600 hover:bg-accent-50 font-medium py-3 px-6 rounded-lg transition-colors duration-200">
+            <Link
+              href="/contact"
+              className="bg-white text-accent-600 hover:bg-accent-50 font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+            >
               Contact Us
             </Link>
           </div>
         </div>
       </section>
     </div>
-  )
-} 
+  );
+}
